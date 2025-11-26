@@ -146,6 +146,7 @@ form {
     pointer-events: none;
 }
 
+
 .section::before {
     width: 260px;
     height: 260px;
