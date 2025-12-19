@@ -148,8 +148,8 @@ body {
 
 .imgMain {
     border-radius: 18px;
-    height: 200px;
-    width: 100%;
+    height: 350px;
+    width:300px;
     display: block;
     object-fit: cover;
     margin: 0 auto 16px;
@@ -158,8 +158,8 @@ body {
 .imgMain:hover {
     transform: scale(1.03);
     border-radius: black 22px;
-    width:400px;
-    height: 300px;
+    width:350px;
+    height: 400px;
 }
 
 .gridItem ul {

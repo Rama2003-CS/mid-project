@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mid Project</title>
-    <link rel="stylesheet" href="../classes/midproject.css">
+    <link rel="stylesheet" href="../classes/sign.css">
 </head>
 
 <body>
@@ -28,14 +28,38 @@
  
     <section class="section">
         <div class="content">
-            <h1>Endless Glow</h1>
-            <p>Discover our premium skincare products</p>
+            
+            <form>
+        <label>
+          Full name :
+        </label>
+       <input type="text" name="name" placeholder="inter your name  " required><br>
+       
+       <label>
+        Email     :
+        </label>
+       <input type="email" name="Email" placeholder="inter your Email " required> <br>
 
-            <a href="collection.html" class="btn">Explore Collection</a>
+
+       <label>
+          Password  :
+        </label>
+       <input type="Password" name="Password" placeholder="inter your Password " required> <br>
+
+
+       <label>
+          Number    :
+        </label>
+       <input type="tel" name="Number" placeholder="inter your Number " required> <br>
+       
+
+       <button onclick="buttonW()"><a class="button1" href="collection.html">submit</a></button>
+
+     </form>
+
         </div>
     </section>
 
-    
     <footer id="footer">
         <div class="footer-container">
 
@@ -47,6 +71,7 @@
 
         </div>
     </footer>
-
+    <script src="/js/home.js"></script>
 </body>
+
 </html>

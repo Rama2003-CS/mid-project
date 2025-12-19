@@ -111,16 +111,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 16px 70px;
+    padding: 90px;
     background-size: 500% 500%;   
 }
 
 #main {
     width: 92%;
     max-width: 1120px;
-    margin: 0 auto;
+    margin: 50px auto;
     position: relative;
     z-index: 1;
+    padding: 90px;
+    
 }
 
 
@@ -207,7 +209,8 @@ body {
     color: #e5e7eb;
     padding: 32px 16px 20px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 0px;
+    bottom: 0px;
 }
 
 .footer-container {
@@ -231,19 +234,6 @@ body {
     font-size: 12px;
     margin-top: 12px;
    
-}
-
-
-@keyframes floatUp {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-28px);
-    }
-    100% {
-        transform: translateY(0);
-    }
 }
 
 
