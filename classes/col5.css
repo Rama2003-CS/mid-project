@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #1f2933;
+    background: #fdf2f8;
+}
+
+
+
+.navbar {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 12px 0;
+    width: 100%;
+    top: 0;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin:  auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#logo {
+    border-radius:500px;
+    display: block;
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border: 2px solid #f9a8d4;
+
+    }
+
+#logo:hover {
+    transform: translateY(-2px) scale(1.05);
+    border-color: #ec4899;
+    
+}
+
+.nav-links {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: rgb(75, 75, 75);
+    background-color: #ffe4f5;
+    transform: translateY(-1px);
+}
+
+.nav-links a.active {
+    background: linear-gradient(135deg, #ec4899, #f97316);
+    color: #fff;
+}
+
+
+
+.navbar form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.formInput {
+    padding: 8px 14px;
+    border-radius: 50px;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    font-size: 15px;
+    min-width: 150px;
+    background: rgba(249, 250, 251, 0.9);
+}
+
+
+.butt {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+    font-size: 15px;
+    background: linear-gradient(135deg, #ec4899, #f97316);
+    color: #fff;
+}
+
+.butt:hover {
+    transform: translateY(-1px);
+}
+
+
+.section{
+    background-color: #fde2f0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 16px 70px;
+    background-size: 500% 500%;   
+}
+
+
+#main {
+    width: 92%;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(255, 255, 255, 0.22);
+    border-radius: 30px;
+    padding: 26px 22px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#mainGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+}
+
+.gridItem {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 30px;
+    padding: 20px 18px;
+    text-align: left;
+    border: 1px solid rgba(248, 250, 252, 0.9);
+}
+
+.gridItem:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(236, 72, 153, 0.18);
+}
+
+.imgMain {
+    border-radius: 18px;
+    height: 350px;
+    width: 300px;
+    display: block;
+    object-fit: cover;
+    margin:10px;
+    padding: auto;
+}
+
+.imgMain:hover {
+    transform: scale(1.03);
+    border-radius: black 22px;
+    width:350px;
+    height: 400px;
+}
+
+.gridItem ul {
+    padding-left: 20px;
+    margin-top: 8px;
+    color: black;
+    line-height: 1.7;
+    font-size:15px;
+}
+
+.gridItem li {
+    margin-bottom: 4px;
+}
+
+#footer {
+    background: #0f172a;
+    color: #e5e7eb;
+    padding: 32px 16px 20px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.footer-container {
+    margin:  auto;
+    text-align: center;
+}
+
+.footer-logo h2 {
+    font-size: 30px;
+    margin-bottom: 6px;
+    color:palevioletred;
+}
+
+.footer-logo p {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #9ca3af;
+}
+
+.copyright {
+    font-size: 12px;
+    margin-top: 12px;
+   
+}
+
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-28px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    form {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .section {
+        padding: 30px 15px;
+    }
+
+    #main {
+        padding: 20px 16px 24px;
+        border-radius: 22px;
+    }
+
+    .footer-logo h2 {
+        font-size: 1.8rem;
+    }
+}
